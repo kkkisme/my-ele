@@ -144,7 +144,7 @@ export default {
       if (this.totalPrice < this.seller.minPrice) {
         return
       }
-      window.alert(`支付${this.totalPrice}元`)
+      window.alert(`支付${this.totalPrice + this.seller.deliveryPrice}元`)
     }
   },
   computed: {
